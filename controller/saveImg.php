@@ -3,10 +3,12 @@
         $point = strpos($file, ".");
         $urlImage = substr($file, 8 );
         $urlImage = substr($urlImage, 0, strpos($urlImage, "."));
+        $str='momo';
+        $str=md5($str);
 
         $extention = substr($file, $point);
         $date = date("Ymd_his");
-        $file = "../src/img/meme/".$urlImage.$date.$extention;
+        $file = "../src/img/meme/".$urlImage.$str.$date.$extention;
 
 
         try{
