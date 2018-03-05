@@ -20,23 +20,24 @@
     // Save image
     $img->writeImage($fileDisk);
 
-    echo  '<div class=\'container\'>
-                <div class=\'jumbotron mt-3\'>
-                    <div class=\'text-center\'>
-                        <img class=\'text-center\' src='. $fileDisk . '>
+    echo  '<div class="container">
+                <div class="jumbotron mt-3">
+                    <div class="text-center">
+                        <img class="text-center" src='. $fileDisk . '>
                     </div>
                 </div>
         </div>';
+
     $url = "localhost/meme_generator/" . substr($fileDisk, 3);
 
-    echo '<div class=\'container\'>
-            <div class=\'jumbotron mt-3\'>
-                <div class=\'text-center\'>
-                    URL : <a href=\'.$fileDisk.\'>'.$url.'</a>
+    echo '<div class="container">
+            <div class="jumbotron mt-3">
+                <div class="text-center">
+                    <div class="mb-4">URL : <a href='.$fileDisk.'>'.$url.'</a></div>
                 </div>
-                <form method=\'post\' action=\'../index.php\' class=\'mt-1 text-center\'>
-                    <button class=\'btn btn-danger\' type=\'submit\' value=\'Submit\'>Retour</button>
+                <form method="post" action="../index.php" class="mt-1 text-center">
+                    <button class="btn btn-danger" type="submit" value="Submit">Retour</button>
                 </form>
             </div>
-        </div>'
+        </div>';
 ?>
