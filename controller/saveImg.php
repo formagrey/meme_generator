@@ -10,7 +10,7 @@
 
 
         try{
-            $stmt = $connect->prepare("INSERT INTO meme (url) VALUE ('$file') ");
+            $stmt = $connect->prepare("INSERT INTO meme (url, date) VALUES ('$file', NOW()) ");
             $stmt->execute();
             return $file;
 
