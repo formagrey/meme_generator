@@ -8,6 +8,7 @@
     <body>
         <div class="container mt-3">
             <div id="imgici" class="jumbotron text-center">
+                <h1>Générateur de mème de qualité!</h1>
                 <img src="src/img/slime.png" alt="img" name="fichier">
             </div>
             <div class="jumbotron text-center">
