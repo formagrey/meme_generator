@@ -2,6 +2,7 @@
     include '../db/connectDB.php';
     include '../controller/saveImg.php';
     include 'imagemagick.php';
+    include '../includes/header.php';
 
      $connect= connectDB();
 
@@ -19,11 +20,23 @@
     // Save image
     $img->writeImage($fileDisk);
 
-    echo  '<div><img src='. $fileDisk . '></div>';
+    echo  '<div class=\'container\'>
+                <div class=\'jumbotron mt-3\'>
+                    <div class=\'text-center\'>
+                        <img class=\'text-center\' src='. $fileDisk . '>
+                    </div>
+                </div>
+        </div>';
     $url = "localhost/meme_generator/" . substr($fileDisk, 3);
 
-    echo "<a class='text-center' href=".$fileDisk.">".$url."</a>";
+    echo '<div class=\'container\'>
+            <div class=\'jumbotron mt-3\'>
+                <div class=\'text-center\'>
+                    URL : <a href=\'.$fileDisk.\'>'.$url.'</a>
+                </div>
+                <form method=\'post\' action=\'../index.php\' class=\'mt-1 text-center\'>
+                    <button class=\'btn btn-danger\' type=\'submit\' value=\'Submit\'>Retour</button>
+                </form>
+            </div>
+        </div>'
 ?>
-    <form method='post' action='../index.php'>
-        <button class='btn btn-dark' type="submit" Value="Submit">Retour</button>
-    </form>
