@@ -36,7 +36,7 @@ $(document).ready(function(){
 
     disableButton(checkTestUp, checkTestDown);
     //desactiver le bouton
-    
+
 
      $('.messageTextUp').keyup(function(){
        //verifie la valeur du message et on stock en variable check au relachement de la touche
@@ -51,5 +51,9 @@ $(document).ready(function(){
        //active desactiver la fonction bouton au relachement d"1 rouche
        disableButton(checkTestUp, checkTestDown);
      });
-
+     
+     //Ecrit en majuscule dans input
+     $("input").keyup(function(){
+         $(this).val($(this).val().toUpperCase());
+     });
 });
