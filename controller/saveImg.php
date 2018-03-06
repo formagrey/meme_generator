@@ -41,7 +41,7 @@
    function deleteImgFromDB($connect) {
        $stmt = $connect->prepare("DELETE FROM meme
        WHERE DATEDIFF(CURDATE(), date) < 7");
-       shell_exec("find /var/www/meme_generator/src/img/meme/ -mtime +7 -exec rm {} \;");
+       //shell_exec("find /var/www/meme_generator/src/img/meme/ -mtime +7 -exec rm {} \;");
        $stmt->execute();
 
    }
