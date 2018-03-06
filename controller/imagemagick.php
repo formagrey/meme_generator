@@ -18,10 +18,11 @@
         /* Set font color */
         $draw->setFillColor('white');
 
-        /* Annotate some text */
-        $draw->annotation(40, 50, $textUp);
 
-        $draw->annotation(40, 470, $textDown);
+        /* Annotate some text */
+        $draw->annotation(170, 50, $textUp);
+
+        $draw->annotation(170, 470, $textDown);
 
         /* Create a new canvas object and a white image */
         $canvas = new Imagick($file);
