@@ -1,4 +1,7 @@
 <?php
+
+    echo "<body style=\"background-color: grey\">";
+
     include '../db/connectDB.php';
     include '../controller/saveImg.php';
     include 'imagemagick.php';
@@ -39,5 +42,6 @@
                     <button class="btn btn-danger" type="submit" value="Submit">Retour</button>
                 </form>
             </div>
-        </div>';
+        </div>
+        </body>';
 ?>

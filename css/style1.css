@@ -1,3 +1,9 @@
+body {
+  background-color: grey; }
+
+h1 {
+  color: black; }
+
 .imghover {
   height: 150px;
   width: 150px;
@@ -5,6 +11,14 @@
 
 .div2 {
   height: 280px; }
+
+.iconedroite {
+  margin-left: 90px;
+  color: black; }
+
+.iconegauche {
+  margin-right: 90px;
+  color: black; }
 
 /* show 3 items */
 .carousel-inner .active,

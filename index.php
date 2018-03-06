@@ -7,8 +7,8 @@
     </head>
     <body>
         <div class="container mt-3">
-            <h1 class="text-center">Générateur de mème de qualité!</h1>
             <div id="imgici" class="jumbotron text-center">
+                <h1 class="text-center">Générateur de mème de qualité!</h1>
                 <img src="src/img/slime.png" alt="img" name="fichier">
             </div>
             <div class="jumbotron text-center div2">
@@ -46,11 +46,11 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                        <i class="fa fa-chevron-left fa-lg fa-2x iconegauche"></i>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                        <i class="fa fa-chevron-right fa-lg fa-2x iconedroite"></i>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
