@@ -13,15 +13,34 @@
         $draw->popPattern();
 
         /* Set font size to 52 */
-        $draw->setFontSize(30);
+        $draw->setFontSize(50);
+
+        /* Définit le crénage de la police (une valeur négative signifie que les lettres sont proches les unes des autres) */
+        $draw->setTextKerning(-5);
 
         /* Set font color */
         $draw->setFillColor('white');
 
-        /* Annotate some text */
-        $draw->annotation(40, 50, $textUp);
 
-        $draw->annotation(40, 470, $textDown);
+        /* Définit à blanc la couleur du trait de la bordure */
+        $draw->setStrokeColor('black');
+
+        /* Rend plus fin le trait de la bordure */
+        $draw->setStrokeWidth(2);
+
+        /* set Font Weight */
+        $draw->setFontWeight(800);
+
+        /* set Text Alignement */
+        $draw->setTextAlignment(Imagick:: ALIGN_CENTER);
+        /* Annotate some text */
+        $draw->annotation(250, 70, $textUp);
+
+        /* set Text Alignement */
+        $draw->setTextAlignment(Imagick:: ALIGN_CENTER);
+        /* Annotate some text */
+        $draw->annotation(250, 470, $textDown);
+
 
         /* Create a new canvas object and a white image */
         $canvas = new Imagick($file);

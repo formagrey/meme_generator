@@ -7,11 +7,11 @@
     </head>
     <body>
         <div class="container mt-3">
+            <h1 class="text-center">Générateur de mème de qualité!</h1>
             <div id="imgici" class="jumbotron text-center">
-                <h1>Générateur de mème de qualité!</h1>
                 <img src="src/img/slime.png" alt="img" name="fichier">
             </div>
-            <div class="jumbotron text-center">
+            <div class="jumbotron text-center div2">
                 <img src="src/img/slime.png" alt=""class="imghover">
                 <img src="src/img/img1.jpg" alt=""class="imghover">
                 <img src="src/img/img2.jpg" alt=""class="imghover">
