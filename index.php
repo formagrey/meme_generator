@@ -12,12 +12,48 @@
                 <img src="src/img/slime.png" alt="img" name="fichier">
             </div>
             <div class="jumbotron text-center div2">
-                <img src="src/img/slime.png" alt=""class="imghover">
-                <img src="src/img/img1.jpg" alt=""class="imghover">
-                <img src="src/img/img2.jpg" alt=""class="imghover">
-                <img src="src/img/img3.jpg" alt=""class="imghover">
-                <img src="src/img/img4.jpg" alt=""class="imghover">
-                <img src="src/img/img5.jpg" alt=""class="imghover">
+                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
+                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                        <div class="carousel-item col-md-3 active">
+                            <img src="src/img/slime.png" alt="slide 1" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img src="src/img/img1.jpg" alt="slide 2" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img src="src/img/img2.jpg" alt="slide 3" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img src="src/img/img3.jpg" alt="slide 4" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img src="src/img/img4.jpg" alt="slide 5" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img src="src/img/img5.jpg" alt="slide 6" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img src="src/img/img6.jpg" alt="slide 7" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img src="src/img/img7.png" alt="slide 8" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img src="src/img/img7.jpeg" alt="slide 9" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                        <div class="carousel-item col-md-3">
+                            <img src="src/img/img9.png" alt="slide 10" class="imghover img-fluid mx-auto d-block">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <i class="fa fa-chevron-left fa-lg text-muted"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                        <i class="fa fa-chevron-right fa-lg text-muted"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
             <div class="jumbotron text-center">
                 <form method="post" action="controller/traitementImgController.php">
